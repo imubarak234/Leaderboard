@@ -1,23 +1,25 @@
+/* eslint-disable max-classes-per-file */
+
 class Entry {
-  constructor(name, score){
+  constructor(name, score) {
     this.Name = name;
     this.Score = score;
   }
 }
 
 class List {
-  constructor(){
+  constructor() {
     this.Lists = [];
   }
 
-  addToEnd(name, score){
+  addToEnd(name, score) {
     const newEntry = new Entry(name, score);
     this.Lists.push(newEntry);
   }
 
-  removeAt(index){
+  removeAt(index) {
     this.Lists.splice(index, 1);
   }
 }
 
-export {List as default};
+export { List as default };

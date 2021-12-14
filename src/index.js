@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 import List from './store.js';
 
@@ -23,10 +22,9 @@ const addToPage = (name, score) => {
 
   maindiv.setAttribute('class', 'fields');
   message.innerHTML = `${name}: ${score}`;
-  if(count % 2 == 0)
-  maindiv.style.backgroundColor = 'grey';
+  if (count % 2 === 0) { maindiv.style.backgroundColor = 'grey'; }
   count += 1;
-}
+};
 
 leader.Lists.forEach((element) => {
   addToPage(element.Name, element.Score);
@@ -37,13 +35,10 @@ const add = document.getElementById('adding');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  //console.log(event.target);
 });
 
-add.addEventListener('click', (e) => {
+add.addEventListener('click', () => {
   const name = document.getElementById('name');
   const score = document.getElementById('score');
-  if((name.value != '') && (score.value != ''))
-  addToPage(name.value, score.value);
-})
-
+  if ((name.value !== '') && (score.value !== '')) { addToPage(name.value, score.value); }
+});

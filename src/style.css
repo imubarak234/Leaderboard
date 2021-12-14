@@ -31,7 +31,7 @@ body {
   align-items: center;
 }
 
-h1{
+h1 {
   align-self: flex-start;
   font-size: 3em;
   padding-left: 4%;
@@ -42,6 +42,12 @@ h1{
   height: auto;
 }
 
+form button {
+  width: 40%;
+  padding: 2%;
+  align-self: flex-end;
+}
+
 .refresh-section button {
   padding: 2%;
 }
@@ -49,12 +55,6 @@ h1{
 .add-section {
   width: 45%;
   height: auto;
-}
-
-form button {
-  width: 40%;
-  padding: 2%;
-  align-self: flex-end;
 }
 
 form input {
