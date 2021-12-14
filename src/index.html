@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Leaderboard</title>
+</head>
+<body class="flex direction arrange">
+    <h1>Leaderboard</h1>
+    <div class="flex main-div">
+      <!--This section displays the main leaderboard, title and table-->
+      <div class="divs-in flex">
+        <section class="refresh-section flex direction">
+          <div class="flex inner">
+            <h2>Recent Scores</h2>
+            <button type="button" id="refreshButton">Refresh</button>
+          </div>
+          <div class="table"></div>
+        </section>
+  
+        <!--This section displays this form for manually adding scores to the leaderboard-->
+        <section class="add-section flex direction">
+          <h2>Add Your Score</h2>
+          <form class="flex direction" id="forms">
+            <input type="text" id="name" placeholder="Your Name" aria-required="true" required>
+            <input type="text" id='score' placeholder="Your Score" aria-required="true" required>
+            <button type="submit" id="adding">Submit</button>
+          </form>
+        </section>
+      </div>
+    </div>
+</body>
+</html>
