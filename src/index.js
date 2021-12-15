@@ -54,7 +54,6 @@ add.addEventListener('click', () => {
       score: score.value,
     };
     postData(url, entry)
-      .then()
       .catch((error) => {
         console.error('Error: ', error);
       });

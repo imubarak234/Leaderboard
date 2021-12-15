@@ -1,4 +1,4 @@
-async function postData(url = '', data = {}) {
+const postData = async (url = '', data = {}) => {
   const response = await fetch(url, {
     method: 'POST',
     headers: {
@@ -7,6 +7,6 @@ async function postData(url = '', data = {}) {
     body: JSON.stringify(data),
   });
   return response.json();
-}
+};
 
 export { postData as default };
