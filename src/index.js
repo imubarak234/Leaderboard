@@ -34,6 +34,7 @@ const addToPage = (name, score) => {
   message.innerHTML = `${name}: ${score}`;
   leader.addToEnd(name, score);
   if (count % 2 === 0) { maindiv.style.backgroundColor = 'grey'; }
+  hold.style.border = '2px solid black';
   count += 1;
 };
 
@@ -57,6 +58,7 @@ add.addEventListener('click', () => {
       .catch((error) => {
         console.error('Error: ', error);
       });
+    form.reset();
   }
 });
 
