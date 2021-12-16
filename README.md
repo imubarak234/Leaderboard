@@ -1,6 +1,8 @@
 ## Leaderboard
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
+![Screenshot (18)](https://user-images.githubusercontent.com/71400898/146347182-1d0406af-3f44-4f3d-956e-286f7ece8342.png)
 ## Built with
+
 HTML
 CSS
 Javascript
