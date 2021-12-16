@@ -8,7 +8,6 @@ html,
 body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: azure;
 }
 
 .flex {
@@ -41,8 +40,6 @@ h1 {
 .refresh-section {
   width: 40%;
   height: auto;
-  background-color: white;
-  box-shadow: 2px 2px 5px black;
 }
 
 form button {
@@ -53,15 +50,11 @@ form button {
 
 .refresh-section button {
   padding: 2%;
-  box-shadow: 5px 5px 5px black;
 }
 
 .add-section {
   width: 45%;
   height: auto;
-  background-color: white;
-  box-shadow: 2px 2px 5px black;
-  padding: 2% 1%;
 }
 
 form input {
@@ -71,7 +64,7 @@ form input {
 
 .inner {
   justify-content: space-between;
-  padding: 3% 2%;
+  padding: 3% 0;
 }
 
 .divs-in {
